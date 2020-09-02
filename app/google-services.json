@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1035048543573",
+    "firebase_url": "https://itsmb-1.firebaseio.com",
+    "project_id": "itsmb-1",
+    "storage_bucket": "itsmb-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035048543573:android:572da242e1057238b57bdc",
+        "android_client_info": {
+          "package_name": "com.sparky.mb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035048543573-pjmqao497rr63h2q2a3vblv73stp7h64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC0i4tip2aHs4iwTGlX-YZRiQDG5gX6ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035048543573-pjmqao497rr63h2q2a3vblv73stp7h64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035048543573:android:974409cc0e4ad1f7b57bdc",
+        "android_client_info": {
+          "package_name": "com.sparky.moivebazaaradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035048543573-3c0qt9qp98fkdogmcusd21et5vrhsjed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sparky.moivebazaaradmin",
+            "certificate_hash": "59e6f592b4591ae2df02b8585e41723dc07f0d62"
+          }
+        },
+        {
+          "client_id": "1035048543573-pjmqao497rr63h2q2a3vblv73stp7h64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC0i4tip2aHs4iwTGlX-YZRiQDG5gX6ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035048543573-pjmqao497rr63h2q2a3vblv73stp7h64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

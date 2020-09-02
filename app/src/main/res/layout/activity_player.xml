@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showFullScreenButton="false"
+            app:showYouTubeButton="false"
+            app:enableAutomaticInitialization="true" />
+
+        <TextView
+            android:id="@+id/qualityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntu"
+            android:textSize="10sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue_grey_200"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/player_title"
+        android:text="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:typeface="normal"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/player_id"
+        android:text="Video ID : NA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:enabled="true"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"/>
+
+    <!-- This TextView displays the description of video -->
+    <!-- This view has has the following properties:
+            -maxLines set to 15 so whole of description can be seen
+     -->
+    <TextView
+        android:id="@+id/player_description"
+        android:text="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="15"
+        android:textIsSelectable="true"
+
+        android:layout_margin="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/moviesLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/SearchLayout"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/AddLayout"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/background_tcx_rectangle_outline">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:tint="@color/grey_10"
+                app:srcCompat="@drawable/ic_play" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Add Movie"
+                android:textColor="@color/grey_10" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/editLayout"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/background_tcx_rectangle_outline">
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:tint="@color/grey_10"
+                app:srcCompat="@drawable/ic_edit_white_24dp"
+                android:background="@color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Edit Movie"
+                android:textColor="@color/grey_10" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/SearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/background_tcx_rectangle_outline"
+        android:focusable="true">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:tint="@color/grey_10"
+            app:srcCompat="@drawable/ic_connect"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Search Youtube"
+            android:textColor="@color/grey_10" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
